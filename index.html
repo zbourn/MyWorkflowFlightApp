@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<meta name="viewport" content="width=device-width"/>
+		<title>Workflow Flight App</title>
+        <script type="text/javascript" src="j/spin.min.js"></script>
+        <!--[if IE]>
+        <script type="text/javascript" src="j/IE_loadSapUI5.js"></script>
+        <![endif]-->
+	  	<!--[if (gt IE 9)|!(IE)]><!-->
+	  	<script type="text/javascript" src="j/loadSapUI5.js"></script>
+	  	<!--<![endif]-->
+        <link rel="stylesheet" type="text/css" href="s/temp.css">
+        <!-- When On ABAP use google font -->
+        <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body class="sapUiBody" id="content">
+		<div id="tempLoadPlaceholder"></div>
+		<div id="tempLogoPlaceholder">
+			<div class="tempLogo"></div>
+			<div class="tempSLogan"></div>
+		</div>
+	</body>
+		<script>
+		oApplication.load(	"resources/sap-ui-core.js",
+							 "sap-ui-bootstrap",
+							 "sap.m, sap.ui.layout",
+							 '{"UI5Apps": "./"}',
+							 "complex",
+							 "sap_bluecrystal",
+							 oApplication.onSAPUI5Loaded );
+	</script>
+	
+</html>

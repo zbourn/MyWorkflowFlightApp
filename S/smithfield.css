@@ -1,0 +1,630 @@
+/* Containers styles
+-------------------------------------------------------*/
+/* line 5, smithfield.scss */
+.sapUiBody {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+}
+/* line 9, smithfield.scss */
+.sapUiBody .sapMGlobalBackgroundColor {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8f7ff), color-stop(43%, #f9fdff), color-stop(55%, #fff8ea), color-stop(71%, #fff3db), color-stop(100%, #e7ffc6));
+  background-image: -webkit-linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+  background-image: -moz-linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+  background-image: -o-linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+  background-image: linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+  /*.sapMGlobalBackgroundImage{
+  }*/
+}
+
+/* line 19, smithfield.scss */
+.sapMShellBrandingBar {
+  background-color: #FFA518;
+}
+
+/* line 24, smithfield.scss */
+.splitAppStyle .sapMSplitContainerMaster {
+  background: none;
+}
+/* line 31, smithfield.scss */
+.splitAppStyle .sapMSplitContainerMaster:not(.sapMSplitContainerMasterVisible):before {
+  border-right-color: transparent !important;
+}
+/* line 35, smithfield.scss */
+.splitAppStyle .sapMSplitContainerMaster:not(.sapMSplitContainerMasterVisible):after {
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* line 40, smithfield.scss */
+.splitAppStyle.sapMGlobalBackgroundColor > .sapMGlobalBackgroundImage {
+  display: block !important;
+  background: url("../i/bg.jpg") no-repeat center center !important;
+  background-size: cover !important;
+}
+
+/* Header Bar styles
+-------------------------------------------------------*/
+/* line 49, smithfield.scss */
+.sapMBar.sapMHeader-CTX {
+  color: #fff;
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+}
+
+/* line 54, smithfield.scss */
+.sap-desktop .sapMBar.sapMPageHeader {
+  background: #A33863;
+}
+
+/* line 58, smithfield.scss */
+.sapMBar.sapMPageHeader {
+  background: #A33863;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px;
+}
+/* line 61, smithfield.scss */
+.sapMBar.sapMPageHeader:before {
+  border-top-color: #FFA518;
+}
+
+/* line 66, smithfield.scss */
+.sapMPageHeader .sapMBtn {
+  border-color: #883053;
+}
+
+/* line 70, smithfield.scss */
+.sapMPageHeader .sapMBtnContent > .sapUiIcon {
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px;
+}
+
+/*when active*/
+/* line 76, smithfield.scss */
+.sapMPageHeader .sapMBtn.sapMBtnActive:not(.sapMBtnDisabled) {
+  background-color: #FFA518;
+  border-color: #883053;
+}
+
+/* line 81, smithfield.scss */
+.sapMPageHeader .sapMLabel {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif !important;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px;
+}
+
+/* Empty Page styles
+-------------------------------------------------------*/
+/* line 91, smithfield.scss */
+.sapMSplitContainerDetail .emptyPage {
+  background: url("../i/bg.jpg") no-repeat fixed center center !important;
+  background-size: cover !important;
+}
+
+/* line 100, smithfield.scss */
+.sapMSplitContainerDetail .emptyPage {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px inset;
+}
+
+/* Login Page styles
+-------------------------------------------------------*/
+/* line 106, smithfield.scss */
+.sapMSplitContainerMaster .loginPage {
+  background: url("../i/bg.jpg") no-repeat fixed center center !important;
+  background-size: cover !important;
+}
+
+/* line 113, smithfield.scss */
+.loginPage .loginLogo {
+  display: block;
+  margin: 2rem auto 0 auto;
+  max-width: 100%;
+}
+/* line 119, smithfield.scss */
+.loginPage .loginSLogan {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Icon styles
+-------------------------------------------------------*/
+/* line 129, smithfield.scss */
+.smithIcon {
+  margin: 5px 0;
+  background: #FFF0D6;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+  border-radius: 45px;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px;
+}
+
+/* Inputs styles
+-------------------------------------------------------*/
+/* line 140, smithfield.scss */
+.smithInputStyle input {
+  border-color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: rgba(107, 107, 105, 0.1) 0px 1px 0;
+  -webkit-box-shadow: rgba(107, 107, 105, 0.1) 0px 2px 0px;
+  -moz-box-shadow: rgba(107, 107, 105, 0.1) 0px 2px 0px;
+  box-shadow: rgba(107, 107, 105, 0.1) 0px 2px 0px;
+  -webkit-transition-property: border-color;
+  -moz-transition-property: border-color;
+  -o-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/*Button styles
+-------------------------------------------------------*/
+/* line 153, smithfield.scss */
+.smithButtonStyle {
+  margin-bottom: 5px;
+  background-color: #FFF0D6;
+  border: 1px solid #FFF0D6;
+  color: #333333;
+  text-shadow: 0 1px 0 #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: #fed099 0px 2px 0px, rgba(107, 107, 105, 0.1) 0px 4px 1px;
+  -moz-box-shadow: #fed099 0px 2px 0px, rgba(107, 107, 105, 0.1) 0px 4px 1px;
+  box-shadow: #fed099 0px 2px 0px, rgba(107, 107, 105, 0.1) 0px 4px 1px;
+}
+
+/* line 164, smithfield.scss */
+.smithButtonStyle.sapMBtnHover:not(.sapMBtnDisabeled),
+.smithButtonStyle.sapMBtnDesktop:hover:not(.sapMBtnDisabled) {
+  background-color: #FFFCF2;
+  border: 1px solid #FFFCF2;
+}
+
+/* line 170, smithfield.scss */
+.smithButtonStyle.sapMBtnActive:not(.sapMBtnDisabeled),
+.smithButtonStyle.sapMBtnDesktop:active:not(.sapMBtnDisabeled) {
+  background-color: #10ACE7;
+  border: 1px solid #0098DA;
+  -webkit-box-shadow: #0098da 0px 2px 0px inset;
+  -moz-box-shadow: #0098da 0px 2px 0px inset;
+  box-shadow: #0098da 0px 2px 0px inset;
+}
+
+/* Dialog styles
+-------------------------------------------------------*/
+/* line 180, smithfield.scss */
+.sapUiBLy {
+  background-color: #FFFCF2;
+}
+
+/* line 184, smithfield.scss */
+.sapMDialog {
+  border: 0;
+  background: #FFF0D6;
+  border-color: #FED099;
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+}
+/* line 190, smithfield.scss */
+.sapMDialog header.sapMBar {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* line 197, smithfield.scss */
+.sapMDialog > header.sapMDialogTitle > .sapMBarMiddle > .sapMBarPH > .sapMLabel {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #813B09;
+}
+
+/* line 202, smithfield.scss */
+.sapMDialog > section {
+  background: none;
+}
+/* line 205, smithfield.scss */
+.sapMDialog > section .sapMText {
+  text-align: center !important;
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #813B09;
+}
+
+/* line 212, smithfield.scss */
+.sapMDialog > footer.sapMDialogActions {
+  background: #A33863 !important;
+  border-top: 0;
+}
+
+/* line 217, smithfield.scss */
+.sapMDialog > footer.sapMDialogActions > .sapMDialogAction {
+  border-color: #883053;
+}
+
+/* line 221, smithfield.scss */
+.sapMDialog > footer.sapMDialogActions > .sapMDialogAction > button.sapMDialogBtn {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+}
+
+/* line 226, smithfield.scss */
+.logOutPop .logouttext {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #813B09;
+}
+
+/* line 232, smithfield.scss */
+.sapMPopup-CTX .sapMBar.sapMPageHeader {
+  background: none !important;
+}
+
+/* line 236, smithfield.scss */
+.sapMPopup-CTX .sapMBar-CTX.sapMPageHeader .sapMLabel {
+  color: #813B09;
+  text-shadow: white 0px 1px 0px;
+}
+
+/* Loading styles
+-------------------------------------------------------*/
+/* line 243, smithfield.scss */
+.sapUiLocalBusyIndicator {
+  background: none;
+}
+
+/* Refresh styles
+-------------------------------------------------------*/
+/* line 250, smithfield.scss */
+.sapMPullDown {
+  color: #754A1E;
+  background: none;
+  text-align: center;
+}
+
+/* List styles
+-------------------------------------------------------*/
+/* line 260, smithfield.scss */
+.smithListStyle .sapMListHdr {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  text-align: center;
+  color: #A33863;
+  border-bottom: 0;
+  white-space: normal;
+  text-overflow: inherit;
+  height: auto;
+  line-height: normal;
+  padding: 1rem 1rem 0 1rem;
+}
+/* line 273, smithfield.scss */
+.smithListStyle li.sapMLIB {
+  background-color: #FFFCF2;
+  margin: 1rem;
+  border-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px;
+  			/*@include transition-property(background-color);
+    			@include transition-duration(0.3s);*/
+}
+/* line 283, smithfield.scss */
+.smithListStyle li.sapMLIB .sapMLIBContent {
+  /*IE bugline break*/
+}
+/* line 288, smithfield.scss */
+.smithListStyle .sapMLIB.sapMLIBSelected {
+  background: #A33863;
+  color: #ffffff;
+}
+/* line 293, smithfield.scss */
+.smithListStyle .sapMLIBActive.sapMLIB, .smithListStyle .sapMLIBActive.sapMLIB > td {
+  color: #ffffff;
+  background: #A33863;
+}
+
+/* Desktop list item Hover */
+/* line 302, smithfield.scss */
+.sap-desktop .sapMLIB:hover:not(.sapMLIBActive):not(.sapMLIBTypeInactive):not(.sapMLIBTypeDetail):not(.sapMALI), .sap-desktop .sapMListUl:not(.sapMListModeDelete):not(.sapMListModeNone) .sapMLIB:hover:not(.sapMLIBActive):not(.sapMALI), .sap-desktop .sapM+
+LIB:hover:not(.sapMLIBActive):not(.sapMLIBTypeInactive):not(.sapMLIBTypeDetail):not(.sapMALI) > td, .sap-desktop .sapMLIB:hover:not(.sapMLIBActive):not(.sapMLIBTypeInactive):not(.sapMLIBTypeDetail):not(.sapMALI) + .sapMListTblSubRow, .sap-desktop .sapMLi+
+stTblSubRow:hover:not(.sapMLIBActive):not(.sapMLIBTypeInactive):not(.sapMLIBTypeDetail):not(.sapMALI) {
+  background: #FFF0D6;
+}
+
+/* Desktop list item Active */
+/* line 307, smithfield.scss */
+.sap-desktop .sapMLIBSelected:hover:not(.sapMLIBActive):not(.sapMALI), .sap-desktop .sapMListUl:not(.sapMListModeDelete):not(.sapMListModeNone) .sapMLIBSelected:hover:not(.sapMLIBActive):not(.sapMALI), .sap-desktop .sapMLIBSelected:hover:not(.sapMLIBActi+
+ve):not(.sapMALI) > td, .sap-desktop .sapMLIBSelected:hover:not(.sapMLIBActive):not(.sapMALI) + .sapMListTblSubRow, .sap-desktop .sapMLIBSelected:not(.sapMLIBActive):not(.sapMALI) + .sapMListTblSubRow:hover {
+  background: #A33863;
+}
+
+/* Customer Page styles
+-------------------------------------------------------*/
+/* line 314, smithfield.scss */
+.sapMSplitContainerMaster .customersPage {
+  background: url("../i/bg.jpg") no-repeat fixed center center !important;
+  background-size: cover !important;
+}
+
+/* line 321, smithfield.scss */
+.customersPage .sapMBar.sapMPageHeader {
+  background: #a33863 url("../i/whitelogo.svg") no-repeat center center;
+  background-size: 134px 28px;
+}
+/* line 330, smithfield.scss */
+.customersPage .customersList .shiptoName {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #A33863;
+  font-weight: bold;
+  margin: 10px 10px 0 10px;
+  /*IE bug line break*/
+}
+/* line 338, smithfield.scss */
+.customersPage .customersList .shiptoNumber {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #6B6B69;
+  margin: 0 10px 10px 10px;
+}
+/* line 344, smithfield.scss */
+.customersPage .customersList .storeIconBox {
+  width: 20% !important;
+}
+/* line 347, smithfield.scss */
+.customersPage .customersList .shiptoBox {
+  width: 60% !important;
+}
+/* line 350, smithfield.scss */
+.customersPage .customersList .arrowIconBox {
+  width: 20% !important;
+}
+/* line 355, smithfield.scss */
+.customersPage .customersList .sapMLIB.sapMLIBSelected .storeIcon, .customersPage .customersList .sapMLIB.sapMLIBSelected .arrowIcon {
+  color: #ffffff !important;
+}
+/* line 358, smithfield.scss */
+.customersPage .customersList .sapMLIB.sapMLIBSelected .shiptoName {
+  color: #ffffff;
+}
+/* line 361, smithfield.scss */
+.customersPage .customersList .sapMLIB.sapMLIBSelected .shiptoNumber {
+  color: #FFF0D6;
+}
+/* line 367, smithfield.scss */
+.customersPage .customersList .sapMLIBActive.sapMLIB .storeIcon, .customersPage .customersList .sapMLIBActive.sapMLIB .arrowIcon {
+  color: #ffffff !important;
+}
+/* line 370, smithfield.scss */
+.customersPage .customersList .sapMLIBActive.sapMLIB .shiptoName {
+  color: #ffffff;
+}
+/* line 373, smithfield.scss */
+.customersPage .customersList .sapMLIBActive.sapMLIB .shiptoNumber {
+  color: #FFF0D6;
+}
+
+/* Main Page styles
+-------------------------------------------------------*/
+/* line 384, smithfield.scss */
+.sapMSplitContainerDetail .mainPage {
+  background-color: #fff8ea;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px inset;
+}
+
+/* line 389, smithfield.scss */
+.mainPage {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8f7ff), color-stop(43%, #f9fdff), color-stop(55%, #fff8ea), color-stop(71%, #fff3db), color-stop(100%, #e7ffc6));
+  background-image: -webkit-linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+  background-image: -moz-linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+  background-image: -o-linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+  background-image: linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+}
+/* line 393, smithfield.scss */
+.mainPage .sapMLIB.sapMLIBSelected .truckIcon {
+  color: #FFF0D6 !important;
+}
+/* line 396, smithfield.scss */
+.mainPage .sapMLIB.sapMLIBSelected .valueLabel {
+  color: #ffffff;
+}
+/* line 399, smithfield.scss */
+.mainPage .sapMLIB.sapMLIBSelected .titleLabel {
+  color: #FFF0D6;
+}
+/* line 402, smithfield.scss */
+.mainPage .sapMLIB.sapMLIBSelected .ETAlabel {
+  color: #FFF0D6;
+}
+/* line 405, smithfield.scss */
+.mainPage .sapMLIB.sapMLIBSelected .ETAvalue {
+  color: #ffffff;
+}
+/* line 411, smithfield.scss */
+.mainPage .sapMLIBActive.sapMLIB .truckIcon, .mainPage .sapMLIBActive.sapMLIB > td .truckIcon {
+  color: #FFF0D6 !important;
+}
+/* line 416, smithfield.scss */
+.mainPage .truckIcon {
+  display: block;
+  margin: 0.8rem auto;
+}
+@media (min-width: 720px) {
+  /* line 422, smithfield.scss */
+  .mainPage .truckIcon {
+    margin: 4rem auto 0 auto;
+  }
+}
+
+/* line 428, smithfield.scss */
+.shipmentListItemStyle {
+  margin: 0.8rem;
+}
+
+/* line 432, smithfield.scss */
+.titleLabel {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #754E27;
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+/* line 439, smithfield.scss */
+.valueLabel {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #813B09;
+  font-size: 1rem;
+}
+
+/* line 445, smithfield.scss */
+.ETAContainer {
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* line 449, smithfield.scss */
+.ETAlabel {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #BD9059;
+}
+
+/* line 453, smithfield.scss */
+.ETAvalue {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #813B09;
+}
+
+/* Detail Page styles
+-------------------------------------------------------*/
+/* line 461, smithfield.scss */
+.sapMSplitContainerDetail .detailPage {
+  background-color: #fff8ea;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px inset;
+}
+
+/* line 466, smithfield.scss */
+.detailPage {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8f7ff), color-stop(43%, #f9fdff), color-stop(55%, #fff8ea), color-stop(71%, #fff3db), color-stop(100%, #e7ffc6));
+  background-image: -webkit-linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+  background-image: -moz-linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+  background-image: -o-linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+  background-image: linear-gradient(#e8f7ff, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6);
+}
+
+/* line 472, smithfield.scss */
+.shipmentDetailList .sapMListHdr {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  text-align: center;
+  color: #A33863;
+  border-bottom: 0;
+}
+/* line 479, smithfield.scss */
+.shipmentDetailList .sapMListUl {
+  position: relative;
+  margin: 1rem;
+  background: #FEFEFE;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px;
+  -moz-border-radius-topright: 41px 55px;
+  -webkit-border-top-right-radius: 41px 55px;
+  border-top-right-radius: 41px 55px;
+}
+/* line 486, smithfield.scss */
+.shipmentDetailList .sapMListUl:before {
+  content: '';
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  right: 0;
+  border-bottom: 28px solid transparent;
+  border-right: 28px solid #FFF0D6;
+  /*border-top: 28px solid transparent;*/
+}
+/* line 500, smithfield.scss */
+.shipmentDetailList .sapMListUl:after {
+  content: '';
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /*border-bottom: 28px solid transparent;*/
+  border-left: 28px solid #FED099;
+  border-top: 28px solid transparent;
+}
+/* line 514, smithfield.scss */
+.shipmentDetailList .sapMListUl .sapMLIB {
+  margin: 0 0.8rem;
+  background: none;
+  border-bottom: 1px solid #FFF0D6;
+  text-shadow: white 0px 1px 0;
+}
+/* line 520, smithfield.scss */
+.shipmentDetailList .sapMListUl .sapMLIB .sapUiRespGrid {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+/* line 525, smithfield.scss */
+.shipmentDetailList .sapMListUl .sapMLIB .detailLabel {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #BD915A;
+}
+/* line 530, smithfield.scss */
+.shipmentDetailList .sapMListUl .sapMLIB .detailValue {
+  font-family: 'Cabin',Arial,Helvetica,sans-serif;
+  color: #813B09;
+  font-weight: bold;
+}
+
+/* IE style bugs fixes
+-------------------------------------------------------*/
+/* line 544, smithfield.scss */
+html[data-sap-ui-browser*=ie] {
+  /*IE bugline break*/
+}
+/* line 546, smithfield.scss */
+html[data-sap-ui-browser*=ie] .smithIcon {
+  margin-top: 8px;
+}
+/* line 552, smithfield.scss */
+html[data-sap-ui-browser*=ie] .smithListStyle li.sapMLIB .sapMLIBContent {
+  max-width: 100%;
+}
+/* line 556, smithfield.scss */
+html[data-sap-ui-browser*=ie] .customersPage .customersList .shiptoName {
+  max-width: 153px;
+}
+/* line 560, smithfield.scss */
+html[data-sap-ui-browser*=ie] .shipmentDetailList .sapMLIBContent {
+  max-width: 100%;
+}
+
+/* IE 9 bugs fixes */
+/* line 568, smithfield.scss */
+html[data-sap-ui-browser*=ie9] .smithListStyle li.sapMLIB {
+  width: 96%;
+  margin: 1rem 2%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+/* line 573, smithfield.scss */
+html[data-sap-ui-browser*=ie9] .shipmentDetailList .sapMListUl .sapMLIB {
+  margin: 0;
+}

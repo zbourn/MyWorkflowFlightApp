@@ -1,0 +1,135 @@
+<core:View xmlns:core="sap.ui.core"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+xmlns:l="sap.ui.layout"
+controllerName="UI5Apps.myworkflowproj.Login"
+xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page showHeader="false" class="loginPage">
+		<content>
+			<l:Grid
+				vSpacing="1"
+				hSpacing="1"
+				defaultIndent="L0 M0 S0"
+				defaultSpan="L12 M12 S12">
+				<l:content>
+			
+					<Image src="i/logo.svg" class="loginLogo">
+						<layoutData>
+							<l:GridData
+								span="L12 M12 S12"
+								linebreakL="true"
+								linebreakM="true"
+								linebreakS="true" />
+						</layoutData>
+					</Image>
+					
+					<Image src="i/slogan.svg" class="loginSLogan">
+						<layoutData>
+							<l:GridData
+								span="L12 M12 S12"
+								linebreakL="true"
+								linebreakM="true"
+								linebreakS="true" />
+						</layoutData>
+					</Image>
+					
+					
+					<core:Icon
+							src="sap-icon://customer"
+							size="1.4em"
+							width="35px"
+							height="35px"
+							color="#6B6B69"
+							class="smithIcon"
+							press="focusName">
+						<core:layoutData>
+							<l:GridData
+								span="L2 M2 S2"
+								linebreakL="true"
+								linebreakM="true"
+								linebreakS="true" />
+						</core:layoutData>
+					</core:Icon>
+						
+					<Input
+							id="inptLoginName"
+							class="smithInputStyle"
+							width="100%"
+							type="Text"
+							placeholder="{i18n>LoginNamePlaceholder}"
+							valueStateText="{i18n>LoginNameError}"
+							value="{
+									path : 'offlineUser>/name',
+									type : 'sap.ui.model.type.String',
+									constraints : {
+											minLength: 1,
+											maxLength: 12
+									}
+							}">
+						<layoutData>
+							<l:GridData
+								span="L10 M10 S10"
+								linebreakL="false"
+								linebreakM="false"
+								linebreakS="false" />
+						</layoutData>	
+					</Input>
+					
+					<core:Icon
+							src="sap-icon://locked"
+							size="1.4em"
+							width="35px"
+							height="35px"
+							color="#6B6B69"
+							class="smithIcon"
+							press="focusPass">
+						<core:layoutData>
+							<l:GridData
+								span="L2 M2 S2"
+								linebreakL="true"
+								linebreakM="true"
+								linebreakS="true" />
+						</core:layoutData>
+					</core:Icon>
+						
+					<Input
+							id="inptLoginPassword"
+							class="smithInputStyle"
+							width="100%"
+							type="Password"
+							placeholder="{i18n>LoginPasswordPlaceholder}"
+						    valueStateText="{i18n>LoginPasswordError}"
+							value="{
+									path : 'offlineUser>/password',
+									type : 'sap.ui.model.type.String',
+									constraints : {
+											minLength: 1,
+											maxLength: 12
+								}
+							}">
+						<layoutData>
+							<l:GridData
+								span="L10 M10 S10"
+								linebreakL="false"
+								linebreakM="false"
+								linebreakS="false" />
+						</layoutData>	
+					</Input>
+					
+					<Button
+						id="bntLogin"
+						class="smithButtonStyle"
+						width="100%"
+						text="Login"
+						press="actLogin"
+						iconFirst="false"
+						icon="sap-icon://navigation-right-arrow">
+						
+					</Button>
+					
+				</l:content>
+			</l:Grid>
+		</content>
+	</Page>
+</core:View>
+

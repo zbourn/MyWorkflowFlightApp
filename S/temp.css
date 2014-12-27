@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cabin Regular'), local('Cabin-Regular'), url('font/cabinreguler.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Cabin Bold'), local('Cabin-Bold'), url('font/cabinbold.woff') format('woff');
+}
+
+html, body{
+	background: #fff8ea !important;
+}
+
+#tempLoadPlaceholder{
+	overflow:hidden;
+	text-align:center;
+	height:100%;
+	min-height: 100%;
+}
+
+#tempLogoPlaceholder{
+	overflow:hidden;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	min-height: 100%;
+	
+	background: #fff8ea !important;
+	background: -moz-linear-gradient(top,  #e8f7ff 0%, #f9fdff 43%, #fff8ea 55%, #fff3db 71%, #e7ffc6 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8f7ff), color-stop(43%,#f9fdff), color-stop(55%,#fff8ea), color-stop(71%,#fff3db), color-stop(100%,#e7ffc6)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e8f7ff 0%,#f9fdff 43%,#fff8ea 55%,#fff3db 71%,#e7ffc6 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -ms-linear-gradient(top,  #e8f7ff 0%,#f9fdff 43%,#fff8ea 55%,#fff3db 71%,#e7ffc6 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom,  #e8f7ff 0%,#f9fdff 43%,#fff8ea 55%,#fff3db 71%,#e7ffc6 100%) !important; /* W3C */
+}
+
+#tempLogoPlaceholder .tempLogo{
+	overflow:hidden;
+	margin:10% auto 0 auto;
+	width:156px;
+	height:55px;
+	max-width:100%;
+	background:url("../i/logo.svg") no-repeat;
+	background-size:100% 100%;
+}
+
+#tempLogoPlaceholder .tempSLogan{
+	overflow:hidden;
+	margin:10px auto;
+	width:152px;
+	height:22px;
+	max-width:100%;
+	background:url("../i/slogan.svg") no-repeat;
+	background-size:100% 100%;
+}

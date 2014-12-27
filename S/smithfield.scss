@@ -1,0 +1,579 @@
+@import "compass/css3";
+
+/* Containers styles
+-------------------------------------------------------*/
+.sapUiBody{
+
+	font-family:'Cabin',Arial,Helvetica,sans-serif;
+
+	.sapMGlobalBackgroundColor{
+	
+		 @include background-image(linear-gradient(#e8f7ff,#f9fdff 43%,#fff8ea 55%,#fff3db 71%,#e7ffc6));
+		
+		/*.sapMGlobalBackgroundImage{
+		}*/
+	}
+	
+}
+
+.sapMShellBrandingBar{
+	background-color: #FFA518;
+}
+
+.splitAppStyle{
+	.sapMSplitContainerMaster{
+		background:none;
+	}
+	
+	.sapMSplitContainerDetail{
+	}
+	
+	.sapMSplitContainerMaster:not(.sapMSplitContainerMasterVisible):before{
+		border-right-color:transparent !important;
+	}
+	
+	.sapMSplitContainerMaster:not(.sapMSplitContainerMasterVisible):after{
+		border-right: 2px solid rgba(255,255,255,0.3);
+	}
+}
+
+.splitAppStyle.sapMGlobalBackgroundColor > .sapMGlobalBackgroundImage {
+	display: block !important;
+	background: url("../i/bg.jpg") no-repeat center center !important;
+	background-size: cover !important;
+}
+
+
+/* Header Bar styles
+-------------------------------------------------------*/
+.sapMBar.sapMHeader-CTX {
+	color: #fff;
+	font-family:'Cabin',Arial,Helvetica,sans-serif;
+}
+
+.sap-desktop .sapMBar.sapMPageHeader{
+	background: #A33863;
+}
+
+.sapMBar.sapMPageHeader {
+	background: #A33863;
+	@include box-shadow(rgba(0,0,0,0.2) 0px 2px 1px);
+	&:before{
+		border-top-color: #FFA518;
+	}
+}
+
+.sapMPageHeader .sapMBtn {
+	border-color: #883053;
+}
+
+.sapMPageHeader .sapMBtnContent>.sapUiIcon {
+	color: #ffffff;
+	@include text-shadow(rgba(0,0,0,0.2) 0px 2px 0px);
+}
+
+/*when active*/
+.sapMPageHeader .sapMBtn.sapMBtnActive:not(.sapMBtnDisabled) {
+	background-color:#FFA518;
+	border-color: #883053;
+}
+
+.sapMPageHeader .sapMLabel {
+	font-family: 'Cabin',Arial,Helvetica,sans-serif !important;
+	color: #ffffff;
+	@include text-shadow(rgba(0,0,0,0.2) 0px 2px 0px);
+}
+
+
+
+/* Empty Page styles
+-------------------------------------------------------*/
+.sapMSplitContainerDetail .emptyPage{
+	background:url("../i/bg.jpg") no-repeat fixed center center !important;
+	background-size:cover !important;
+}
+
+.emptyPage{
+	
+}
+
+.sapMSplitContainerDetail .emptyPage{
+	@include box-shadow(rgba(0,0,0,0.1) 2px 0px 5px inset);
+}
+
+/* Login Page styles
+-------------------------------------------------------*/
+.sapMSplitContainerMaster .loginPage {
+	background:url("../i/bg.jpg") no-repeat fixed center center !important;
+	background-size:cover !important;
+}
+
+.loginPage{
+	
+	.loginLogo{
+		display:block;
+		margin: 2rem auto 0 auto;
+		max-width:100%;
+	}
+	
+	.loginSLogan{
+		display:block;
+		margin: 0 auto;
+		max-width:100%;
+	}
+	
+}
+
+/* Icon styles
+-------------------------------------------------------*/
+.smithIcon{
+	margin:5px 0;
+	background:#FFF0D6;
+	@include border-radius(45px);
+	@include text-shadow(rgba(0,0,0,0.2) 0px 1px 0);
+	@include box-shadow(rgba(0,0,0,0.1) 0px 2px 0px);
+}
+
+/* Inputs styles
+-------------------------------------------------------*/
+.smithInputStyle{
+	input{
+			border-color:#fff;
+			@include border-radius(3px);
+			@include text-shadow(rgba(107,107,105,0.1) 0px 1px 0);
+			@include box-shadow(rgba(107,107,105,0.1) 0px 2px 0px);
+			
+			@include transition-property(border-color);
+  			@include transition-duration(0.3s);
+		}
+}
+
+/*Button styles
+-------------------------------------------------------*/
+.smithButtonStyle{
+	margin-bottom:5px;
+	background-color: #FFF0D6;
+	border: 1px solid #FFF0D6;
+	color: #333333;
+	text-shadow: 0 1px 0 #ffffff;
+	@include border-radius(3px);
+	@include box-shadow(#FED099 0px 2px 0px, rgba(107,107,105,0.1) 0px 4px 1px);
+}
+
+.smithButtonStyle.sapMBtnHover:not(.sapMBtnDisabeled),
+.smithButtonStyle.sapMBtnDesktop:hover:not(.sapMBtnDisabled){
+	background-color: #FFFCF2;
+	border: 1px solid #FFFCF2;
+}
+
+.smithButtonStyle.sapMBtnActive:not(.sapMBtnDisabeled),
+.smithButtonStyle.sapMBtnDesktop:active:not(.sapMBtnDisabeled) {
+	background-color: #10ACE7;
+	border: 1px solid #0098DA;
+	@include box-shadow(#0098DA 0px 2px 0px inset);
+}
+
+
+/* Dialog styles
+-------------------------------------------------------*/
+
+.sapUiBLy {
+	background-color: #FFFCF2;
+}
+
+.sapMDialog{
+	border:0;
+	background:#FFF0D6;
+	border-color:#FED099;
+	font-family:'Cabin',Arial,Helvetica,sans-serif;
+	
+	header.sapMBar{
+		background:none !important;
+		box-shadow:none !important;
+	}
+	
+}
+
+.sapMDialog>header.sapMDialogTitle>.sapMBarMiddle>.sapMBarPH>.sapMLabel{
+	font-family:'Cabin',Arial,Helvetica,sans-serif;
+	color:#813B09;
+}
+
+.sapMDialog>section{
+	background:none;
+	
+	.sapMText{
+		text-align:center !important;
+		font-family:'Cabin',Arial,Helvetica,sans-serif;
+		color:#813B09;
+	}
+}
+
+.sapMDialog>footer.sapMDialogActions {
+	background: #A33863 !important;
+	border-top:0;
+}
+
+.sapMDialog>footer.sapMDialogActions>.sapMDialogAction{
+	border-color: #883053;
+}
+
+.sapMDialog>footer.sapMDialogActions>.sapMDialogAction>button.sapMDialogBtn{
+	font-family:'Cabin',Arial,Helvetica,sans-serif;
+}
+
+.logOutPop {
+	.logouttext{
+		font-family:'Cabin',Arial,Helvetica,sans-serif;
+		color:#813B09;
+	}
+}
+
+.sapMPopup-CTX .sapMBar.sapMPageHeader {
+	background: none !important;
+}
+
+.sapMPopup-CTX .sapMBar-CTX.sapMPageHeader .sapMLabel{
+	color:#813B09;
+	@include text-shadow(rgba(255,255,255,1) 0px 1px 0px);
+}
+
+/* Loading styles
+-------------------------------------------------------*/
+.sapUiLocalBusyIndicator{
+	background:none;
+}
+
+
+/* Refresh styles
+-------------------------------------------------------*/
+.sapMPullDown {
+	color: #754A1E;
+	background:none;
+	text-align:center;
+}
+
+/* List styles
+-------------------------------------------------------*/
+.smithListStyle{
+
+	.sapMListHdr {
+		font-family:'Cabin',Arial,Helvetica,sans-serif;
+		text-align:center;
+		color:#A33863;
+		border-bottom:0;
+		
+		white-space:normal;
+		text-overflow: inherit;
+		height:auto;
+		line-height:normal;
+		padding: 1rem 1rem 0 1rem;
+	}
+
+	li.sapMLIB {
+			background-color:#FFFCF2;
+			margin:1rem;
+			border-bottom:0;
+			@include border-radius(3px);
+			@include text-shadow(rgba(0,0,0,0.1) 0px 1px 0px);
+			@include box-shadow(rgba(0,0,0,0.1) 0px 2px 0px);
+			/*@include transition-property(background-color);
+  			@include transition-duration(0.3s);*/
+  			
+  			.sapMLIBContent {
+  				/*IE bugline break*/
+  			}
+	}
+		
+	.sapMLIB.sapMLIBSelected{
+			background:#A33863;
+			color:#ffffff;
+	}
+	
+	.sapMLIBActive.sapMLIB, .sapMLIBActive.sapMLIB>td {
+		color: #ffffff;
+		background: #A33863;
+	}
+}
+
+
+
+/* Desktop list item Hover */
+.sap-desktop .sapMLIB:hover:not(.sapMLIBActive):not(.sapMLIBTypeInactive):not(.sapMLIBTypeDetail):not(.sapMALI), .sap-desktop .sapMListUl:not(.sapMListModeDelete):not(.sapMListModeNone) .sapMLIB:hover:not(.sapMLIBActive):not(.sapMALI), .sap-desktop .sapM+
+LIB:hover:not(.sapMLIBActive):not(.sapMLIBTypeInactive):not(.sapMLIBTypeDetail):not(.sapMALI) > td, .sap-desktop .sapMLIB:hover:not(.sapMLIBActive):not(.sapMLIBTypeInactive):not(.sapMLIBTypeDetail):not(.sapMALI) + .sapMListTblSubRow, .sap-desktop .sapMLi+
+stTblSubRow:hover:not(.sapMLIBActive):not(.sapMLIBTypeInactive):not(.sapMLIBTypeDetail):not(.sapMALI) {
+    background:#FFF0D6;
+}
+
+/* Desktop list item Active */
+.sap-desktop .sapMLIBSelected:hover:not(.sapMLIBActive):not(.sapMALI), .sap-desktop .sapMListUl:not(.sapMListModeDelete):not(.sapMListModeNone) .sapMLIBSelected:hover:not(.sapMLIBActive):not(.sapMALI), .sap-desktop .sapMLIBSelected:hover:not(.sapMLIBActi+
+ve):not(.sapMALI) > td, .sap-desktop .sapMLIBSelected:hover:not(.sapMLIBActive):not(.sapMALI) + .sapMListTblSubRow, .sap-desktop .sapMLIBSelected:not(.sapMLIBActive):not(.sapMALI) + .sapMListTblSubRow:hover {
+    background:#A33863;
+}
+	
+
+/* Customer Page styles
+-------------------------------------------------------*/
+.sapMSplitContainerMaster .customersPage{
+	background:url("../i/bg.jpg") no-repeat fixed center center !important;
+	background-size:cover !important;
+}
+
+.customersPage{
+	
+	.sapMBar.sapMPageHeader{
+		background: #A33863 url("../i/whitelogo.svg") no-repeat center center;
+		background-size:134px 28px;
+	}
+	
+	.customersList{
+	
+		.storeIcon{
+		}
+		.shiptoName{
+			font-family:'Cabin',Arial,Helvetica,sans-serif;
+			color:#A33863;
+			font-weight:bold;
+			margin:10px 10px 0 10px;
+			
+			/*IE bug line break*/
+		}
+		.shiptoNumber{
+			font-family:'Cabin',Arial,Helvetica,sans-serif;
+			color:#6B6B69;
+			margin:0 10px 10px 10px;
+		}
+		
+		.storeIconBox{
+			width:20%!important;
+		}
+		.shiptoBox{
+			width:60%!important;
+		}
+		.arrowIconBox{
+			width:20%!important;
+		}
+		
+		.sapMLIB.sapMLIBSelected{
+			.storeIcon, .arrowIcon{
+				color:#ffffff !important;
+			}
+			.shiptoName{
+				color:#ffffff;
+			}
+			.shiptoNumber{
+				color:#FFF0D6;
+			}
+		}
+		
+		.sapMLIBActive.sapMLIB {
+			.storeIcon, .arrowIcon{
+				color:#ffffff !important;
+			}
+			.shiptoName{
+				color:#ffffff;
+			}
+			.shiptoNumber{
+				color:#FFF0D6;
+			}
+		}
+		
+	}
+}
+
+
+/* Main Page styles
+-------------------------------------------------------*/
+.sapMSplitContainerDetail .mainPage{
+	background-color: #fff8ea;
+	@include box-shadow(rgba(0,0,0,0.1) 2px 0px 5px inset);
+}
+
+.mainPage{
+	@include background-image(linear-gradient(#e8f7ff,#f9fdff 43%,#fff8ea 55%,#fff3db 71%,#e7ffc6));
+	
+	.sapMLIB.sapMLIBSelected{
+			.truckIcon{
+				color:#FFF0D6 !important;
+			}
+			.valueLabel{
+				color:#ffffff;
+			}
+			.titleLabel{
+				color:#FFF0D6;
+			}
+			.ETAlabel{
+				color:#FFF0D6;
+			}
+			.ETAvalue{
+				color:#ffffff;
+			}
+	}
+	
+	.sapMLIBActive.sapMLIB, .sapMLIBActive.sapMLIB>td {
+		.truckIcon{
+			color:#FFF0D6 !important;
+		}
+	}
+	
+	.truckIcon{
+		display: block;
+		margin: 0.8rem auto;
+	}
+		
+	@media (min-width: 720px) {
+		.truckIcon{
+			margin: 4rem auto 0 auto;
+		}
+	}
+}
+
+.shipmentListItemStyle{
+	margin:0.8rem;
+}
+
+.titleLabel{
+	font-family:'Cabin',Arial,Helvetica,sans-serif;
+	color:#754E27;
+	font-size:0.8rem;
+	margin-top:0.8rem;
+}
+
+.valueLabel{
+	font-family:'Cabin',Arial,Helvetica,sans-serif;
+	color:#813B09;
+	font-size:1rem;
+}
+
+.ETAContainer{
+	margin-top:0.8rem;
+	margin-bottom:1rem;
+}
+.ETAlabel{
+	font-family:'Cabin',Arial,Helvetica,sans-serif;
+	color:#BD9059;
+}
+.ETAvalue{
+	font-family:'Cabin',Arial,Helvetica,sans-serif;
+	color:#813B09;
+}
+
+
+/* Detail Page styles
+-------------------------------------------------------*/
+.sapMSplitContainerDetail .detailPage{
+	background-color: #fff8ea;
+	@include box-shadow(rgba(0,0,0,0.1) 2px 0px 5px inset);
+}
+
+.detailPage{
+	@include background-image(linear-gradient(#e8f7ff,#f9fdff 43%,#fff8ea 55%,#fff3db 71%,#e7ffc6));
+}
+
+.shipmentDetailList{
+		
+	.sapMListHdr {
+			font-family:'Cabin',Arial,Helvetica,sans-serif;
+			text-align:center;
+			color:#A33863;
+			border-bottom:0;
+	}
+	
+	.sapMListUl {
+			position:relative;
+			margin: 1rem;
+			background:#FEFEFE;
+			@include box-shadow(rgba(0,0,0,0.1) 0px 2px 0px);
+			@include border-top-right-radius(41px 55px);
+			
+			&:before{
+				content: '';
+				cursor: pointer;
+				height: 0;
+				width: 0;
+				position: absolute;
+				top: 28px;
+				right:0;
+				
+				border-bottom: 28px solid transparent;
+				border-right: 28px solid #FFF0D6;
+				/*border-top: 28px solid transparent;*/
+			}
+			
+			&:after{
+				content: '';
+				cursor: pointer;
+				height: 0;
+				width: 0;
+				position: absolute;
+				top: 0;
+				right:0;
+				
+				/*border-bottom: 28px solid transparent;*/
+				border-left: 28px solid #FED099;
+				border-top: 28px solid transparent;
+			}
+			
+			.sapMLIB {
+				margin: 0 0.8rem;
+				background:none;
+				border-bottom: 1px solid #FFF0D6;
+				@include text-shadow(#ffffff 0px 1px 0);
+				
+				.sapUiRespGrid{
+					padding-top:0.8rem;
+					padding-bottom:0.8rem;
+				}
+				
+				.detailLabel{
+					font-family:'Cabin',Arial,Helvetica,sans-serif;
+					color:#BD915A;
+				}
+				
+				.detailValue{
+					font-family:'Cabin',Arial,Helvetica,sans-serif;
+					color:#813B09;
+					font-weight:bold;
+				}
+				
+			}
+			
+	}
+}
+
+
+/* IE style bugs fixes
+-------------------------------------------------------*/
+html[data-sap-ui-browser*=ie]{
+
+	.smithIcon{
+		margin-top:8px;
+	}
+
+	/*IE bugline break*/
+	
+	.smithListStyle li.sapMLIB .sapMLIBContent {
+	  max-width: 100%;
+	}
+	
+	.customersPage .customersList .shiptoName {
+	  max-width: 153px;
+	}
+	
+	.shipmentDetailList .sapMLIBContent{
+		max-width: 100%;
+	}
+}
+
+/* IE 9 bugs fixes */
+
+html[data-sap-ui-browser*=ie9]{
+	.smithListStyle li.sapMLIB {
+		width:96%;
+		margin: 1rem 2%;
+		border-bottom: 2px solid rgba(0,0,0,0.1);
+	}
+	.shipmentDetailList .sapMListUl .sapMLIB {
+		margin: 0;
+	}
+}
